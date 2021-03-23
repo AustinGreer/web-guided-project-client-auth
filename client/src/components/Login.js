@@ -25,11 +25,10 @@ class Login extends React.Component {
     //3. If request is successful, console.log our result
     //4. If request fails show our error
 
-    console.log(this.props);
-
     axios.post('http://localhost:5000/api/login', this.state.credentials)
       .then(res => {
         localStorage.setItem('token', res.data.payload);
+        this.props.history.push('/protected');
       })
       .catch(err=>{
         console.log(err.response);
