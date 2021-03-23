@@ -34,7 +34,7 @@ class Login extends React.Component {
   };
 
   render() {
-    console.log("login state: ",this.state);
+    // console.log("login state: ",this.state);
     return (
       <div>
         <form onSubmit={this.login}>
