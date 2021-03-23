@@ -11,6 +11,7 @@ function App() {
     //1. do a request to our server to delete the token
     //2. remove our local token
     //3. redirect to login page
+    axios.
   };
 
 
