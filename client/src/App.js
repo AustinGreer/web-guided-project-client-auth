@@ -13,7 +13,7 @@ function App() {
     //3. redirect to login page
 
     axiosWithAuth()
-      .post('/logout')
+      .post('http://localhost:5000/api/logout')
       .then(res => {
         localStorage.removeItem('token');
         window.location.href = '/login';
