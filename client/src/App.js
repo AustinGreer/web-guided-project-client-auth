@@ -13,14 +13,14 @@ function App() {
     //3. redirect to login page
 
     axiosWithAuth()
-      .post('http://localhost:5000/api/logout')
+      .post('/logout')
       .then(res => {
         localStorage.removeItem('token');
         window.location.href = '/login';
       })
       .catch(err => {
         console.log(err.response);
-      });
+    });
   };
 
 
