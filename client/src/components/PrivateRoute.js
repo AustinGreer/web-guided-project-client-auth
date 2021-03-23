@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-const PrivateRoute = (props) => {
+const PrivateRoute = ({component:Component}, ...rest) => {
     return <Route {...props} render= {()=>{
-        
+
     }}/>
 }
 
