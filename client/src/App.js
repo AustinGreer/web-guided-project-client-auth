@@ -33,10 +33,10 @@ function App() {
             <Link to="/login">Login</Link>
           </li>
           <li>
-            <Link onClick={logout}>Logout</Link>
+             <Link onClick={logout}>Logout</Link>
           </li>
           <li>
-            <Link to="/protected">Protected Page</Link>
+            {localStorage.getItem('token') &&<Link to="/protected">Protected Page</Link>}
           </li>
         </ul>
         <Switch>
