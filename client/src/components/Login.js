@@ -20,6 +20,10 @@ class Login extends React.Component {
 
   login = e => {
     e.preventDefault();
+    //1. make a request to our server for login
+    //2. we need to pass in our credential
+    //3. If request is successful, console.log our result
+    //4. If request fails show our error
     
   };
 
