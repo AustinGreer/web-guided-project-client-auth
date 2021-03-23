@@ -14,7 +14,7 @@ class GasPrices extends React.Component {
   }
 
   getData = () => {
-    axios.
+    axios.get()
   };
 
   formatData = () => {
